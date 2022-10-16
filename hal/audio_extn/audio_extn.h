@@ -112,7 +112,7 @@ int audio_extn_parse_compress_metadata(struct stream_out *out,
 #define AUDIO_OUTPUT_BIT_WIDTH ((config->offload_info.bit_width == 32) ? 24\
                                    :config->offload_info.bit_width)
 
-#ifndef ENABLE_EXTENDED_COMPRESS_FORMAT
+#if !defined(ENABLE_EXTENDED_COMPRESS_FORMAT) || defined(ENABLE_AUDIO_LEGACY_PURE)
 #define compress_set_metadata(compress, metadata) (0)
 #define compress_get_metadata(compress, metadata) (0)
 #define compress_set_next_track_param(compress, codec_options) (0)
@@ -1422,6 +1422,7 @@ typedef struct auto_hal_init_config {
     fp_platform_set_echo_reference_t             fp_platform_set_echo_reference;
     fp_platform_get_eccarstate_t                 fp_platform_get_eccarstate;
     fp_generate_patch_handle_t                   fp_generate_patch_handle;
+    fp_platform_get_pcm_device_id_t              fp_platform_get_pcm_device_id;
 } auto_hal_init_config_t;
 // END: AUTO_HAL FEATURE ==================================================
 
