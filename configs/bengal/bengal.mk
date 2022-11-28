@@ -176,10 +176,10 @@ PRODUCT_COPY_FILES += \
     $(TARGET_HALS_PATH)/audio/configs/bengal/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/audio_platform_info_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_scubaidp.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/audio_platform_info_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_scubaqrd.xml \
-    $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
+    $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_bengal_idp.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_scubaidp.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_scubaqrd.xml \
-    $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_qrd.xml \
+    $(TARGET_HALS_PATH)/audio/configs/bengal/sound_trigger_mixer_paths_bengal_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_bengal_qrd.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/mixer_paths_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaidp.xml \
     $(TARGET_HALS_PATH)/audio/configs/bengal/mixer_paths_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaqrd.xml \
