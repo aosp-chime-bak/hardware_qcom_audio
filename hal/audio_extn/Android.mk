@@ -1272,12 +1272,18 @@ LOCAL_C_INCLUDES:= \
         system/media/audio/include
 
 LOCAL_SHARED_LIBRARIES:= \
-        android.frameworks.automotive.powerpolicy-V1-ndk \
         libbase \
         libbinder_ndk \
         libcutils \
         liblog \
         libpowerpolicyclient
+
+# *-ndk_platform migrated to *-ndk from Android T onwards
+ifeq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 33), true)
+    LOCAL_SHARED_LIBRARIES += android.frameworks.automotive.powerpolicy-V1-ndk
+else
+    LOCAL_SHARED_LIBRARIES += android.frameworks.automotive.powerpolicy-V1-ndk_platform
+endif
 
 ifneq ($(filter kona lahaina holi,$(TARGET_BOARD_PLATFORM)),)
 LOCAL_SANITIZE := integer_overflow
